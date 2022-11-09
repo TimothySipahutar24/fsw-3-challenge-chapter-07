@@ -33,7 +33,7 @@ header {
   margin-bottom: 16px;
 }
 
-.container-carousel {
+.containerCarousel {
   background-color: #f1f3ff;
   max-width: 328px;
   height: auto;
@@ -66,21 +66,21 @@ header {
   margin-top: 16px;
 }
 
-.loan-banner {
+.loanBanner {
   background-color: #0d28a6;
   padding: 64px 58px 64px 58px;
   border-radius: 13px;
 }
 
-.faq-container {
+.faqContainer {
   margin: 60px 16px 60px 16px;
 }
 
-.faq-description {
+.faqDescription {
   text-align: center;
 }
 
-.footer-container {
+.footerContainer {
   margin-top: 16px;
 }
 
@@ -142,27 +142,27 @@ header {
     margin-right: 32px;
   }
 
-  .loan-banner {
+  .loanBanner {
     background-color: #0d28a6;
     padding: 64px 285px 64px 285px;
     border-radius: 13px;
   }
 
-  .faq-container {
+  .faqContainer {
     margin: 100px 136px 150px 136px;
   }
 
-  .faq-description {
+  .faqDescription {
     margin-right: 132px;
     max-width: 368px;
     text-align: left;
   }
 
-  .footer-container {
+  .footerContainer {
     margin-top: 0px;
   }
 
-  .container-carousel {
+  .containerCarousel {
     background-color: #f1f3ff;
     max-width: 619px;
     height: 270px;

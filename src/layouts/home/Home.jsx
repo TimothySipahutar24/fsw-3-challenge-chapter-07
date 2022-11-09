@@ -1,7 +1,33 @@
 import React from "react";
 import styles from "./Home.module.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Home = () => {
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    slickNext: "",
+    slickPrev: "",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    focusOnSelect: true,
+    autoplaySpeed: 2000,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          centerMode: false,
+          focusOnSelect: false,
+        },
+      },
+    ],
+  };
+
   return (
     <div>
       {/* Komponen Header nanti */}
@@ -266,11 +292,132 @@ const Home = () => {
           </div>
         </section>
 
-        <div className="autoplay">
-          <div className="container-carousel">
+        <Slider {...settings}>
+          <div className={`${styles.containerCarousel}`}>
             <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
               <div style={{ marginRight: "46px" }}>
-                {/* <img src="/images/img_photo.png" alt="photo"> */}
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-1"
+                />
+              </div>
+              <figure>
+                <blockquote className="blockquote">
+                  <p style={{ fontSize: "14px" }}>
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod”
+                  </p>
+                </blockquote>
+                <figcaption className="blockquote-footer">
+                  John Dee 32, <cite title="Source Title">Bromo</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div className={`${styles.containerCarousel}`}>
+            <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
+              <div style={{ marginRight: "46px" }}>
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-2"
+                />
+              </div>
+              <figure>
+                <blockquote className="blockquote">
+                  <p style={{ fontSize: "14px" }}>
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod”
+                  </p>
+                </blockquote>
+                <figcaption className="blockquote-footer">
+                  John Dee 32, <cite title="Source Title">Bromo</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div className={`${styles.containerCarousel}`}>
+            <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
+              <div style={{ marginRight: "46px" }}>
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-3"
+                />
+              </div>
+              <figure>
+                <blockquote className="blockquote">
+                  <p style={{ fontSize: "14px" }}>
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod”
+                  </p>
+                </blockquote>
+                <figcaption className="blockquote-footer">
+                  John Dee 32, <cite title="Source Title">Bromo</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div className={`${styles.containerCarousel}`}>
+            <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
+              <div>
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-4"
+                />
+              </div>
+              <figure>
+                <blockquote className="blockquote">
+                  <p style={{ fontSize: "14px" }}>
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod”
+                  </p>
+                </blockquote>
+                <figcaption className="blockquote-footer">
+                  John Dee 32, <cite title="Source Title">Bromo</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div className={`${styles.containerCarousel}`}>
+            <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
+              <div style={{ marginRight: "46px" }}>
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-5"
+                />
+              </div>
+              <figure>
+                <blockquote className="blockquote">
+                  <p style={{ fontSize: "14px" }}>
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod”
+                  </p>
+                </blockquote>
+                <figcaption className="blockquote-footer">
+                  John Dee 32, <cite title="Source Title">Bromo</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </Slider>
+
+        {/* <div className="autoplay">
+          <div className={`${styles.containerCarousel}`}>
+            <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
+              <div style={{ marginRight: "46px" }}>
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-1"
+                />
               </div>
               <figure>
                 <blockquote className="blockquote">
@@ -290,7 +437,10 @@ const Home = () => {
           <div className="container-carousel">
             <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
               <div style={{ marginRight: "46px" }}>
-                {/* <img src="/images/img_photo.png" alt="photo"> */}
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-2"
+                />
               </div>
               <figure>
                 <blockquote className="blockquote">
@@ -310,7 +460,10 @@ const Home = () => {
           <div className="container-carousel">
             <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
               <div style={{ marginRight: "46px" }}>
-                {/* <img src="/images/img_photo.png" alt="photo"> */}
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-3"
+                />
               </div>
               <figure>
                 <blockquote className="blockquote">
@@ -330,7 +483,10 @@ const Home = () => {
           <div className="container-carousel">
             <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
               <div style={{ marginRight: "46px" }}>
-                {/* <img src="/images/img_photo.png" alt="photo"> */}
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-4"
+                />
               </div>
               <figure>
                 <blockquote className="blockquote">
@@ -350,7 +506,10 @@ const Home = () => {
           <div className="container-carousel">
             <div className="d-flex" style={{ margin: "69px 46px 69px 32px" }}>
               <div style={{ marginRight: "46px" }}>
-                {/* <img src="/images/img_photo.png" alt="photo"> */}
+                <img
+                  src={require("../../assets/images/img_photo.png")}
+                  alt="photo-5"
+                />
               </div>
               <figure>
                 <blockquote className="blockquote">
@@ -367,13 +526,13 @@ const Home = () => {
               </figure>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div
           className="d-flex justify-content-center"
           style={{ marginTop: "100px" }}
         >
-          <div className="text-center text-white loan-banner">
+          <div className={`text-center text-white ${styles.loanBanner}`}>
             <p className="fw-bold" style={{ fontSize: "36px" }}>
               Sewa Mobil di Bekasi Sekarang
             </p>
@@ -401,9 +560,9 @@ const Home = () => {
         </div>
 
         <section id="faq">
-          <div className="faq-container">
+          <div className={`${styles.faqContainer}`}>
             <div className="row">
-              <div className="col-sm-3 faq-description">
+              <div className={`col-sm-3 ${styles.faqDescription}`}>
                 <p className="fw-bold" style={{ fontSize: "24px" }}>
                   Frequently Ask Question
                 </p>
@@ -570,6 +729,86 @@ const Home = () => {
           </div>
         </section>
       </main>
+
+      <footer>
+        <div
+          class="d-flex justify-content-center"
+          style={{ marginBottom: "100px" }}
+        >
+          <div class="d-flex flex-column flex-lg-row">
+            <div style={{ maxWidth: "268px", marginRight: "86px" }}>
+              <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+              <p>binarcarrental@gmail.com</p>
+              <p>081-233-334-808</p>
+            </div>
+            <div
+              class={`${styles.footerContainer}`}
+              style={{ marginRight: "86px" }}
+            >
+              <a class="nav-link" href="/our-services">
+                Our Services
+              </a>
+              <a class="nav-link" style={{ marginTop: "16px" }} href="/why-us">
+                Why Us
+              </a>
+              <a
+                class="nav-link"
+                style={{ marginTop: "16px" }}
+                href="/testimony"
+              >
+                Testimonial
+              </a>
+              <a class="nav-link" style={{ marginTop: "16px" }} href="/faq">
+                FAQ
+              </a>
+            </div>
+            <div
+              class={`${styles.footerContainer}`}
+              style={{ marginRight: "86px" }}
+            >
+              <p>Connect with us</p>
+              <div class="d-flex flex-row" style={{ minWidth: "268px" }}>
+                <img
+                  src={require("../../assets/images/icon_facebook.png")}
+                  alt=""
+                  style={{ marginRight: "16px" }}
+                />
+                <img
+                  src={require("../../assets/images/icon_instagram.png")}
+                  alt=""
+                  style={{ marginRight: "16px" }}
+                />
+                <img
+                  src={require("../../assets/images/icon_twitter.png")}
+                  alt=""
+                  style={{ marginRight: "16px" }}
+                />
+                <img
+                  src={require("../../assets/images/icon_mail.png")}
+                  alt=""
+                  style={{ marginRight: "16px" }}
+                />
+                <img
+                  src={require("../../assets/images/icon_twitch.png")}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class={`${styles.footerContainer}`}>
+              <p>Copyright Binar 2022</p>
+              <a href="/">
+                <div
+                  style={{
+                    width: "100px",
+                    height: "34px",
+                    backgroundColor: "#0d28a6",
+                  }}
+                ></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
