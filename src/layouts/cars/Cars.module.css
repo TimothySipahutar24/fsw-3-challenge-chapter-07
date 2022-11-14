@@ -1,0 +1,87 @@
+header {
+  background-color: #f1f3ff;
+}
+
+.imageHeroSection {
+  width: 344.22px;
+  height: 199px;
+  position: absolute;
+  bottom: -3rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+.bgCar {
+  width: 100%;
+  height: 118.81px;
+  margin-top: 68px;
+  background-color: #0d28a6;
+  border-radius: 60px 0px 0px 0px;
+}
+
+#heroSection {
+  background-color: #f1f3ff;
+}
+
+.heroDescription {
+  margin: 32px 16px 24px 16px;
+}
+
+.offcanvas {
+  max-width: 70% !important;
+}
+
+@media (min-width: 1024px) {
+  .navBoxModelLg {
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+
+  .navList {
+    justify-content: end;
+  }
+
+  .imageHeroSection {
+    width: 704px;
+    height: 407px;
+    position: absolute;
+    top: 100px;
+    left: 46rem;
+    z-index: 1;
+  }
+
+  .heroDescription {
+    margin: 117px 32px 87px 136px;
+  }
+
+  .bgCar {
+    width: 704px;
+    height: 243px;
+    margin-top: 208px;
+    background-color: #0d28a6;
+    border-radius: 60px 0px 0px 0px;
+  }
+
+  .searchBox {
+    width: 80%;
+    margin-top: -55px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 3px 2px #ebebeb;
+    font-size: 12px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+  }
+
+  .resultsContainer {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  .cardResults {
+    width: 333px;
+    height: 100%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+  }
+}
